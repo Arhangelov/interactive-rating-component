@@ -1,0 +1,153 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  font-family: 'Comfortaa', cursive;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-container{
+  padding: 17rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  padding: 1.5rem 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: hsl(216, 12%, 8%);
+  border-radius: 15px;
+}
+
+.star-circle {
+  background-color: hsl(213, 19%, 18%);
+}
+
+.star-icon {
+  padding: .45rem;
+}
+
+.numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  gap: 1.7rem;
+}
+
+.number {
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(216, 12%, 54%);;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: .5rem 0;
+  border-radius: 30px;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  letter-spacing: .25rem;
+  border-style: none;
+}
+
+h2 {
+  color: white;
+}
+
+p {
+  margin-top: 0;
+  color: hsl(217, 12%, 63%);
+  font-size: .8rem;
+}
+
+.footer a {
+  font-size: 1rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.footer {
+  font-size: 1rem;
+  color: hsl(217, 12%, 63%);
+  text-align: center;
+}
+
+a {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+@media ( max-width:375px ) {
+  .container {
+    max-width: 80%;
+  }
+
+  .number {
+    width: 20%;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    padding: .45rem 0;
+  }
+
+  .star-circle {
+    width: 12%;
+    height: 30px;
+    border-radius: 50%;
+  }
+}
+
+@media ( min-width: 900px ) {
+  .container {
+    width: 40%;
+    padding: 2rem 2rem;
+    border-radius: 25px;
+  }
+
+  .star-circle {
+    width: 12%;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .star-icon {
+    padding: .78rem;
+  }
+
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  .numbers {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .number {
+    width: 10%;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    padding: .65rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+}
